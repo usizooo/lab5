@@ -1,0 +1,33 @@
+﻿<Page x:Class="ComputerClub.Views.AddDevicePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="AddDevicePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Название устройства" FontFamily="Cascadia Code SemiBold"/>
+        <TextBox x:Name="deviceNameTextBox" Grid.Row="1" Margin="5"/>
+        <Label Content="Тип устройства" Grid.Row="2" FontFamily="Cascadia Code SemiBold"/>
+        <ComboBox x:Name="deviceTypeComboBox" Grid.Row="3" Margin="5"/>
+        <Label Content="Цена за аренду (руб./мин.) устройства" Grid.Row="4" FontFamily="Cascadia Code SemiBold"/>
+        <xctk:IntegerUpDown x:Name="priceIntegerUpDown" FontFamily="Cascadia Code SemiBold" Grid.Row="5" Margin="5"/>
+        <Button x:Name="addNewDeviceButton" Content="Добавить устройство" FontFamily="Cascadia Code SemiBold" Foreground="White" Grid.Row="7" Margin="5" Click="addNewDeviceButton_Click"/>
+        <Button x:Name="backButton" Content="Назад" FontFamily="Cascadia Code SemiBold" Foreground="White" Grid.Row="8" Margin="5" Click="backButton_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="ComputerClub.Views.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerClub.Views"
+        mc:Ignorable="d"
+        Title="Авторизация" MinHeight="220" MinWidth="280" Height="220" Width="280" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Логин" Margin="5" FontFamily="Cascadia Code SemiBold"/>
+        <TextBox x:Name="loginTextBox" Grid.Row="1" Margin="5" FontFamily="Cascadia Code SemiBold"/>
+        <Label Content="Пароль" Grid.Row="2" Margin="5" FontFamily="Cascadia Code SemiBold"/>
+        <PasswordBox x:Name="passwordBox" PasswordChar="*" Grid.Row="3" Margin="5" FontFamily="Cascadia Code SemiBold"/>
+        <Button x:Name="signInButton" Content="Войти" Foreground="White" Grid.Row="4" Margin="5" FontFamily="Cascadia Code SemiBold" Click="signInButton_Click"/>
+    </Grid>
+</Window>

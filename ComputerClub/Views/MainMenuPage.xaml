@@ -1,0 +1,27 @@
+﻿<Page x:Class="ComputerClub.Views.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="MainMenuPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="adminInfoLabel" FontFamily="Cascadia Code SemiBold" Margin="5"/>
+        <Button x:Name="addNewDeviceButton" Content="Добавить новое устройство" Foreground="White" FontFamily="Cascadia Code SemiBold" Grid.Row="1" Margin="5" Click="addNewDeviceButton_Click"/>
+        <Button x:Name="outputDevicesButton" Content="Список устройств" Foreground="White" FontFamily="Cascadia Code SemiBold" Grid.Row="2" Margin="5" Click="outputDevicesButton_Click"/>
+        <Button x:Name="newOrderButton" Content="Принять заказ" Foreground="White" FontFamily="Cascadia Code SemiBold" Grid.Row="3" Margin="5" Click="newOrderButton_Click"/>
+        <Button x:Name="logsButton" Content="История заказов" Foreground="White" FontFamily="Cascadia Code SemiBold" Grid.Row="4" Margin="5" Click="logsButton_Click"/>
+        <Button x:Name="singUpButton" Content="Зарегистрировать нового админа" Foreground="White" FontFamily="Cascadia Code SemiBold" Grid.Row="5" Margin="5" Click="singUpButton_Click"/>
+    </Grid>
+</Page>
